@@ -10,10 +10,9 @@ args = parser.parse_args()
 
 green = '\033[1;92m'
 yellow = '\033[93m'
-lgreen = '\033[92m'
+purple = '\033[35m'
 clear = '\033[0m'
 bold = '\033[01m'
-cyan = '\033[96m'
 
 print(green + """
 
@@ -24,16 +23,16 @@ print(green + """
 /_/ |_| /_/    /___/_/     /_/ /_/ |_/_/  |_\____/_____/   
 
 """ + green)
-print(green + bold + "   <====YOUTUBE CHANNEL NAME RTHACKS====> \n" + clear)
-print(green + bold + "   <=====WEBSITE LINK IN YOUTUBE CHANNEL===> \n" + clear)
+print(purple + bold + "   <====YOUTUBE CHANNEL NAME RTHACKS====> \n" + clear)
+print(purple+ bold + " <=========https://dev-regaanthamimprogramming.pantheonsite.io/=======> \n" + clear)
 
 ip = args.target
 api = "http://ip-api.com/json/"
 try:
     data = requests.get(api + ip).json()
     sys.stdout.flush()
-    a = lgreen + bold + "[$]"
-    b = cyan + bold + "[$]"
+    a = blue + bold + "[$]"
+    b = bold + "[$]"
     print(a, "[Victim]:", data['query'])
     print(green + "<--------------->" + green)
     print(b, "[ISP]:", data['isp'])
@@ -50,9 +49,14 @@ try:
     print(green + "<--------------->" + green)
     print(b, "[Time zone]:", data['timezone'])
     print(green + "<--------------->" + green)
+print(blue + """
++-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+ +-+-+ +-+-+-+-+-+                                    
+|T|H|A|N|K|S| |F|O|R| |U|S|I|N|G| |T|H|I|S| |T|O|O|L| |C|O|D|E| |B|Y| |R|T| |H|A|C|K|S|                                    
++-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+ +-+-+ +-+-+-+-+-+
+""" + blue)
 except KeyboardInterrupt:
-    print('OK Bye' + lgreen)
+    print('OK Bye' + blue)
     sys.exit(0)
 except requests.exceptions.ConnectionError as e:
-    print(red + "[~]" + " TURN ON YOUR INTERNET OR CHECK YOUR INTERNET CONNECTION" + clear)
+    print(purple + "[~]" + " TURN ON YOUR INTERNET OR CHECK YOUR INTERNET CONNECTION" + clear)
 sys.exit(1)
