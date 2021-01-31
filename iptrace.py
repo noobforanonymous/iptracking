@@ -15,7 +15,7 @@ clear = '\033[0m'
 bold = '\033[01m'
 cyan = '\033[96m'
 
-print (red+"""
+print (green+"""
                                     
      ____  ______   ________  __________  ___   ____________
    / __ \/_  __/  /  _/ __ \/_  __/ __ \/   | / ____/ ____/
@@ -23,9 +23,9 @@ print (red+"""
  / _, _/ / /    _/ // ____/ / / / _, _/ ___ / /___/ /___   
 /_/ |_| /_/    /___/_/     /_/ /_/ |_/_/  |_\____/_____/   
                                                    
-"""+red)
-print (yellow+bold+"   <====YOUTUBE CHANNEL NAME RTHACKS====> \n"+clear)
-print (yellow+bold+"   <=====WEBSITE LINK IN YOUTUBE CHANNEL===> \n"+clear)
+"""+green)
+print (green+bold+"   <====YOUTUBE CHANNEL NAME RTHACKS====> \n"+clear)
+print (green+bold+"   <=====WEBSITE LINK IN YOUTUBE CHANNEL===> \n"+clear)
 
 
 ip = args.target
