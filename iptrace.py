@@ -11,6 +11,7 @@ args = parser.parse_args()
 green = '\033[1;92m'
 yellow = '\033[93m'
 purple = '\033[35m'
+blue = '\033[34m'
 clear = '\033[0m'
 bold = '\033[01m'
 
