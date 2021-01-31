@@ -5,10 +5,10 @@ from sys import argv
 import os
 
 parser = argparse.ArgumentParser()
-parser.add_argument ("-v", help= "target/host IP address", type=str, dest='target', required=True )
+parser.add_argument ("-i", help= "target/host IP address", type=str, dest='target', required=True )
 args = parser.parse_args()
 
-green = '\033[31m'
+green = \033[1;92m'
 yellow = '\033[93m'
 lgreen = '\033[92m'
 clear = '\033[0m'
@@ -36,21 +36,21 @@ try:
         a = lgreen+bold+"[$]"
         b = cyan+bold+"[$]"
         print (a, "[Victim]:", data['query'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (b, "[ISP]:", data['isp'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (a, "[Organisation]:", data['org'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (b, "[City]:", data['city'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (a, "[Region]:", data['region'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (b, "[Longitude]:", data['lon'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (a, "[Latitude]:", data['lat'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (b, "[Time zone]:", data['timezone'])
-        print(red+"<--------------->"+red)
+        print(green+"<--------------->"+green)
         print (a, "[Zip code]:", data['zip'])
         print (" "+yellow)
 except KeyboardInterrupt:
