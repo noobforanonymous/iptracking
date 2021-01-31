@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument ("-i", help= "target/host IP address", type=str, dest='target', required=True )
 args = parser.parse_args()
 
-green = \033[1;92m'
+green = '\033[1;92m'
 yellow = '\033[93m'
 lgreen = '\033[92m'
 clear = '\033[0m'
