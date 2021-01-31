@@ -16,16 +16,16 @@ bold = '\033[01m'
 cyan = '\033[96m'
 
 print (red+"""
-    ____  _______________    ___    _   __
-   / __ \/ ____/ ____/   |  /   |  / | / /
-  / /_/ / __/ / / __/ /| | / /| | /  |/ / 
- / _, _/ /___/ /_/ / ___ |/ ___ |/ /|  /  
-/_/ |_/_____/\____/_/  |_/_/  |_/_/ |_/ 
+                                    
+     ____  ______   ________  __________  ___   ____________
+   / __ \/_  __/  /  _/ __ \/_  __/ __ \/   | / ____/ ____/
+  / /_/ / / /     / // /_/ / / / / /_/ / /| |/ /   / __/   
+ / _, _/ / /    _/ // ____/ / / / _, _/ ___ / /___/ /___   
+/_/ |_| /_/    /___/_/     /_/ /_/ |_/_/  |_\____/_____/   
                                                    
 """+red)
-print (lgreen+bold+"         <===CODE BY REGAAN ===> \n"+clear)
-print (yellow+bold+"   <---(( YOUTUBE CHANNEL NAME RTHACKS ))--> \n"+clear)
-print (yellow+bold+"   <---(( WEBSITE LINK IN YOUTUBE CHANNEL ))--> \n"+clear)
+print (yellow+bold+"   <====YOUTUBE CHANNEL NAME RTHACKS====> \n"+clear)
+print (yellow+bold+"   <=====WEBSITE LINK IN YOUTUBE CHANNEL===> \n"+clear)
 
 
 ip = args.target
