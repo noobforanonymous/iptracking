@@ -8,9 +8,9 @@ pkg install git -y
 pip install lolcat
 pip install requests
 git clone https://github.com/noobforanonymous/iptracking
-cd iptrace
+cd iptracking
 ls
-python iptrace.py -v (your victim ip here)
+python iptrace.py -i (your victim ip here)
 
 
-ex:- python iptrace.py -v 127.0,0.1
+ex:- python iptrace.py -i 127.0.0.1
