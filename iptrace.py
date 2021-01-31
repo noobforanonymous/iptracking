@@ -50,11 +50,12 @@ try:
     print(green + "<--------------->" + green)
     print(b, "[Time zone]:", data['timezone'])
     print(green + "<--------------->" + green)
-print(blue + """
+    print(blue + """
 +-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+ +-+-+ +-+-+-+-+-+                                    
 |T|H|A|N|K|S| |F|O|R| |U|S|I|N|G| |T|H|I|S| |T|O|O|L| |C|O|D|E| |B|Y| |R|T| |H|A|C|K|S|                                    
 +-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+-+-+ +-+-+ +-+-+ +-+-+-+-+-+
 """ + blue)
+  
 except KeyboardInterrupt:
     print('OK Bye' + blue)
     sys.exit(0)
