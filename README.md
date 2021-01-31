@@ -7,12 +7,10 @@ pkg install python2 -y
 pkg install git -y
 pip install lolcat
 pip install requests
-git clone https://github.com/noob-hackers/ipdrone
-cd $HOME
+git clone https://github.com/noobforanonymous/iptracking
+cd iptrace
 ls
-cd ipdrone
-ls
-python ipdrone.py -v (your victim ip here)
+python iptrace.py -v (your victim ip here)
 
 
-ex:- python ipdrone.py -v 127.0,0.1
+ex:- python iptrace.py -v 127.0,0.1
